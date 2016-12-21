@@ -21,6 +21,7 @@ module ActiveRecord
 
     # This pattern matches methods that should be made private because they
     # should not be used in singleton classes.
+    # Removed ^all$| for compatibility with uploading homepage featured image assets
     PRIVATE = \
       /^create(?!_reflection|_callback)|^find(?!er|_callback|_generated)|^first|^minimum$|^maximum$|^new$|d_sco|^update/
 

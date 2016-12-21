@@ -58,6 +58,7 @@ class ActsAsSingletonTest < ActiveSupport::TestCase
     assert_raise(NoMethodError) { HomepageSettings.create }
     assert_raise(NoMethodError) { HomepageSettings.update }
     assert_raise(NoMethodError) { HomepageSettings.alloc }
+    #Removed for compatibility with homepage featured_image loading
     #assert_raise(NoMethodError) { HomepageSettings.all }
     assert_raise(NoMethodError) { HomepageSettings.first }
     assert_raise(NoMethodError) { HomepageSettings.find }
